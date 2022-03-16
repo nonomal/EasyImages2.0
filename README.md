@@ -65,12 +65,16 @@ location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
 ```
 ## 安装
 
-- windows:
+#### windows:
 - 下载简单图床 [最新版](https://github.com/icret/EasyImages2.0/archive/refs/heads/master.zip) | [稳定版](https://github.com/icret/EasyImages2.0/releases) 上传至web目录
 
-- Linux:
+#### Linux:
 
 - `git clone https://github.com/icret/EasyImages2.0.git` 至web目录赋予www:www和0755权限
+
+#### BT宝塔面板
+- 安装环境(Ngixn(推荐) / Apache + PHP(推荐≥7.0)
+- 软件商店搜索`简单图床`一键部署
 
  ## 程序升级
  
@@ -450,7 +454,7 @@ RewriteRule config/(.*).(php)$ – [F]
  ![简单图床 - 统计界面](./install/README/1305032567.png)
   
 ## 兼容
- - 最低`PHP 5.6`,推荐`PHP 7.0`及以上版本，需要PHP支持`Fileinfo,iconv,zip,mbstring,openssl`扩展,如果缺失会导致无法上传/删除图片
+ - 最低`PHP 5.6`,推荐`PHP≥7.0`及以上版本，需要PHP支持`Fileinfo,iconv,zip,mbstring,openssl`扩展,如果缺失会导致无法上传/删除图片
  - 文件上传视图提供文件列表管理和文件批量上传功能，允许拖拽（需要`HTML5`支持）来添加上传文件，支持上传大图片，优先使用`HTML5`旧得浏览器自动使用`Flash和Silverlight`的方式兼容
 
 ## 鸣谢
